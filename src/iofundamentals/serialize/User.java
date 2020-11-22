@@ -11,7 +11,14 @@ package iofundamentals.serialize;
  */
 public class User implements java.io.Serializable{
     
-    private transient int Id;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+	private transient int Id;
     private String name;
     private String password;
     public static double salary;

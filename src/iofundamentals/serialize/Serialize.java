@@ -23,40 +23,50 @@ public class Serialize {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        User user = new User();
-        user.setId(2014098616);
-        user.setName("Nomfundo Molorane");
-        user.setPassword("Blessing*4");
-        user.setSalary(12500);
-        
-        System.out.println(user);
-        
-        //Serialization
-        try(FileOutputStream fileout = new FileOutputStream("user.ser");
-            ObjectOutputStream out = new ObjectOutputStream(fileout);){
-            out.writeObject(user);
-        }catch(IOException ex){
-            ex.printStackTrace();
-        }
-        
-        user = null;
-        System.out.println("Object erased: "+user);
-        
-        //Diserialization
-        try(FileInputStream fileIn = new FileInputStream("user.ser");
-            ObjectInputStream In = new ObjectInputStream(fileIn)){
-            user = (User) In.readObject();
-        }catch(IOException ex){
-            ex.printStackTrace();
-            return;
-        }catch(ClassNotFoundException c){
-            System.out.println("Class not found!");
-            c.printStackTrace();
-            return;
-        }
-        
-        System.out.println("Object Diserialized: "+user);
-
+       serialize();
     }
+    
+    private static void serialize() {
+		// TODO Auto-generated method stub
+    	 User user = new User();
+         user.setId(2014098616);
+         user.setName("Nomfundo Molorane");
+         user.setPassword("Blessing*4");
+         user.setSalary(12500);
+         
+         System.out.println(user);
+         
+         //Serialization
+         try(FileOutputStream fileout = new FileOutputStream("user.ser");
+             ObjectOutputStream out = new ObjectOutputStream(fileout);){
+             out.writeObject(user);
+         }catch(IOException ex){
+             ex.printStackTrace();
+         }
+         
+         user = null;
+         System.out.println("Object erased: "+user);
+	}
+    
+    private static void deserialize() {
+		// TODO Auto-generated method stub
+
+    	 User user = new User();
+    	 
+    	 //Diserialization
+         try(FileInputStream fileIn = new FileInputStream("user.ser");
+             ObjectInputStream In = new ObjectInputStream(fileIn)){
+             user = (User) In.readObject();
+         }catch(IOException ex){
+             ex.printStackTrace();
+             return;
+         }catch(ClassNotFoundException c){
+             System.out.println("Class not found!");
+             c.printStackTrace();
+             return;
+         }
+         
+         System.out.println("Object Diserialized: "+user);
+	}
     
 }

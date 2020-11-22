@@ -9,7 +9,7 @@ public class Echo {
 		Console console = System.console();
 		if (console == null) {
 			System.err.println("Cannot retrieve console object - are you running you"
-					+ " application from an IDE? \n Exiting the application ... ");
+					+ " application from an IDE? \nExiting the application ... ");
 			System.exit(-1); // terminate the application
 		}
 

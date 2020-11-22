@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class BufferedReaderDemo {
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,6 +21,7 @@ public class BufferedReaderDemo {
         }finally {
 
             try {
+            	reader.close();
                 bufferedReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
