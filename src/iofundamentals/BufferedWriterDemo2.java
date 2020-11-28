@@ -29,7 +29,7 @@ public class BufferedWriterDemo2 {
 		Writer w;
 		BufferedWriter out;
 		try{
-			w = new FileWriter("test1.txt");
+			w = new FileWriter("test2.txt");
 			out = new BufferedWriter(w);
 			out.write("Hello World!");
 			

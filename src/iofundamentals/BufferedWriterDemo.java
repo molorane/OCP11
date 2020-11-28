@@ -23,9 +23,10 @@ public class BufferedWriterDemo {
 		try(Writer w = new FileWriter("test1.txt");
 				BufferedWriter bw = new BufferedWriter(w);){
 			bw.write("Hello World!");
-			
+			bw.flush();
+			bw.write("Worwrwr!");
 		}catch(IOException e) {
-			
+			System.out.println(e);
 		}
 	}
 

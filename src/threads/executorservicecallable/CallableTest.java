@@ -35,7 +35,7 @@ public class CallableTest {
 	
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		// the value for which we want to find the factorial
-		long N = 10;
+		int N = 10;
 		// get a callable task to be submitted to the executor service
 		Callable<Long> task = new Factorial(N);
 		// create an ExecutorService with a fixed thread pool having one thread
