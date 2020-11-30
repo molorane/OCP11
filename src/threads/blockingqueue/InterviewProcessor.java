@@ -14,6 +14,7 @@ public class InterviewProcessor implements  Runnable{
 	public void run() {
 		try {
 			String candidate;
+			Thread.sleep(1000);
 			while(!(candidate = bq.take()).equalsIgnoreCase("complete")) {
 				System.out.println("*** "+candidate+" interviewed ***");
 				Thread.sleep(1000);
