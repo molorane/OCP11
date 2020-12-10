@@ -19,16 +19,20 @@ public class AutocloseableFlow {
 	}
 
 	public static void main(String[] args) {
-		
+			
+		try(Window w = new Window()){
+			throw new ArithmeticException();
+		}
 	}
-	
+
 	public void read() throws Exception {
 		try {
-		readFromDatabase();
+			readFromDatabase();
 		} catch (Exception e) {
-		throw e;
+			throw e;
 		}
-		}
-	
-	private void readFromDatabase() throws SQLException { }
+	}
+
+	private void readFromDatabase() throws SQLException {
+	}
 }

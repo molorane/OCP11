@@ -14,6 +14,7 @@ public class BeeperControl {
 		final ScheduledFuture<?> beeperHandle = 
 				scheduler.scheduleAtFixedRate(()->System.out.println("beep"), 10, 10, TimeUnit.SECONDS);
 		scheduler.schedule(()->beeperHandle.cancel(true), 60, TimeUnit.SECONDS);
+		//scheduler.shutdown();
 	}
 
 	public static void main(String[] args) {

@@ -2,6 +2,7 @@ package interfaces;
 
 
 interface P{
+		
 	default Number p() {
 		return 3;
 	}

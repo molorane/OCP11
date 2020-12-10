@@ -13,7 +13,8 @@ public class EnumTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Gender.valueOf("male"));
+		System.out.println(Gender.MALE.name());
+		System.out.println(Gender.MALE.ordinal());
 	}
 
 }

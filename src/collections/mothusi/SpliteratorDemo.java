@@ -15,7 +15,6 @@ import java.util.Spliterator;
  */
 public class SpliteratorDemo {
 
-    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         // Create an array list for doubles.
         List<Double> vals = new ArrayList<>();

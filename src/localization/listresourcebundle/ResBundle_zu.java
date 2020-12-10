@@ -1,20 +1,15 @@
-  package localization.listresourcebundle;
+package localization.listresourcebundle;
 
 import java.util.ListResourceBundle;
 
-//South African version
-public final class ResBundle_zu extends ListResourceBundle {
-
-	@Override
-	protected Object[][] getContents() {
-		// TODO Auto-generated method stub
+// default US English version
+public class ResBundle_zu extends ListResourceBundle {
+	public Object[][] getContents() {
 		return contents;
 	}
-	
 
 	static final Object[][] contents = { 
-			{ "MovieName", "God's must be crazy" }, 
-			{ "GrossRevenue", (Long) 123456l }, // in	euros
-			{ "Year", (Integer) 2011 } };
-
+			{ "MovieName", "Zulu on my stoop" }, 
+			{ "GrossRevenue", (Long) 2000L }, // in US dollars
+			{ "Year", (Integer) 1960 } };
 }

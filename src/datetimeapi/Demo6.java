@@ -25,6 +25,7 @@ public class Demo6 {
 		zonedDateTime = dateTime.atZone(myZone);
 		
 		System.out.println(zonedDateTime);
+		p1();
 	}
 	
 	public static void p1() {

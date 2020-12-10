@@ -12,7 +12,7 @@ public class Demo3 {
 	public static void main(String[] args) {
 		Duration d = Duration.of(90, ChronoUnit.HOURS);
 		System.out.println(d);
-		p2();
+		p();
 	}
 	
 	public static void p() {

@@ -11,11 +11,18 @@ class LastError<T> {
 	}
 }
 
-class StrLastError<S extends CharSequence> extends LastError<String> {
-	public StrLastError(S s) {
+class StrLastError<T extends CharSequence> extends LastError<String> {
+	
+	public StrLastError(T s) {
+	}
+	
+	@Override
+	void setError(String t) {
+		// TODO Auto-generated method stub
+		super.setError(t);
 	}
 
-	void setError(S s) {
+	void setError(T s) {
 		System.out.println("StrLastError: setError");
 	}
 }

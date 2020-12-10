@@ -9,8 +9,7 @@ public class DbUpdate {
 
 	public static void main(String[] args) throws SQLException {
 		Connection connection = DbConnector.connectToDb();
-		try (
-				Statement statement = connection.createStatement();
+		try (Statement statement = connection.createStatement();
 				ResultSet resultSet = statement.executeQuery("SELECT * FROM course WHERE name=\"Medicine\"")) {
 			// first fetch the data and display it before the update operation
 			System.out.println("Before the update");

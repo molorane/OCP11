@@ -15,12 +15,12 @@ public class LocalizedBoxOfficeHits {
 	public static void main(String[] args) {
 		LocalizedBoxOfficeHits localizedHits = new LocalizedBoxOfficeHits();
 		// print the largest box-office hit movie for default (US) locale
-		Locale locale = Locale.getDefault();
-		System.out.println();
+		Locale locale = Locale.getDefault( );
+		System.out.println(locale);
 		localizedHits.printMovieDetails(ResourceBundle.getBundle("localization.listresourcebundle.ResBundle", locale));
 		// print the largest box-office hit movie for Italian locale
-		locale = new Locale("zlu", "DA");
-		localizedHits.printMovieDetails(ResourceBundle.getBundle("localization.listresourcebundle.ResBundle", locale));
+		locale = new Locale("zu");
+		//localizedHits.printMovieDetails(ResourceBundle.getBundle("localization.listresourcebundle.ResBundle", locale));
 	}
 
 }

@@ -2,11 +2,14 @@ package threads.concurrentcollections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ModifyingList {
+	
 	public static void main(String[] args) {
-		List<String> aList = new ArrayList<>();
+		
+		List<String> aList = new LinkedList<>();
 		aList.add("one");
 		aList.add("two");
 		aList.add("three");

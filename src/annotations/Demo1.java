@@ -3,6 +3,7 @@ package annotations;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
+import java.util.List;
 
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAn{
@@ -17,9 +18,16 @@ public class Demo1 {
 	public static void myA() {
 		
 	}
+	
+	@SafeVarargs
+	public Demo1(List<String> ... l) {
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
 
 		
 		try {

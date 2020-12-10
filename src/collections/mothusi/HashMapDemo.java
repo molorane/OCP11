@@ -25,6 +25,8 @@ public class HashMapDemo {
         hm.put("Jane Baker", 1378.00);
         hm.put("Tod Hall", 99.22);
         hm.put("Ralph Smith", -19.08);
+        
+        System.out.println(hm.getOrDefault("Tod Hall", 543.2));
         // Get a set of the entries.
         Set<Map.Entry<String, Double>> set = hm.entrySet();
 

@@ -7,6 +7,7 @@ import java.util.TreeMap;
 public class NavigableMapTest {
 
 	public static void main(String[] args) {
+		
 		NavigableMap<Integer, String> examScores = new TreeMap<>();
 		examScores.put(90, "Sophia");
 		examScores.put(20, "Isabella");

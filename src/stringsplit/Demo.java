@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class Demo {
 
 	public static void main(String[] args) {
-		p();
+		p3();
 	}
 
 	public static void p() {
@@ -33,7 +33,7 @@ public class Demo {
 		System.out.println("List: "+list);
 		
 		list.forEach(str -> System.out.print(str+" "));
-
+		System.out.println();
 		System.out.println(Arrays.toString(words));
 	}
 

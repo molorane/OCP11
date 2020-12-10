@@ -2,11 +2,13 @@ package collections;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.TreeSet;
 import java.util.stream.Stream;
 
 public class QueueTest {
 
 	public static void main(String[] args) {
+		
 		TreeSet t;
 		Queue<Integer> queue = new LinkedList<Integer>();
 		queue.add(1);

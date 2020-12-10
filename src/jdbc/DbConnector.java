@@ -10,7 +10,7 @@ import java.util.Properties;
 public class DbConnector {
 	public static Connection connectToDb() throws SQLException {
 		String url = "jdbc:mysql://localhost/";
-		String database = "dclm?serverTimezone=UTC";
+		String database = "sealapp?serverTimezone=UTC";
 		String userName = "root";
 		String password = "Blessing**4";
 		Driver driver = DriverManager.getDriver(url);

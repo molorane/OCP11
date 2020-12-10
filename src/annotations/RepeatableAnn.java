@@ -23,6 +23,9 @@ import java.util.Arrays;
 }
 
 public class RepeatableAnn {
+	
+	@MyRepeatableAnno(value = {}, d = 4)
+	int a;
 
 	@MyAnno(str = "First", val = 90, love = {1,2,3,4})
 	@MyAnno(str = "Second", val = 10)
@@ -34,7 +37,7 @@ public class RepeatableAnn {
 
 			MyAnno[] ann = m.getAnnotation(MyRepeatableAnno.class).value();
 			for(MyAnno ma: ann) {
-				System.out.println(ma);
+				System.out.println(ma.annotationType());
 			}
 		} catch (Exception ex) {
 			System.out.println("Method not found.");

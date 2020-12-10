@@ -11,7 +11,8 @@ public class LocalizedHello {
 		Locale.setDefault(currentLocale);
 		ResourceBundle resBundle =
 		ResourceBundle.getBundle("localization.ResourceBundle", Locale.getDefault());
-		System.out.printf(resBundle.getString("Currencym"));
+		System.out.println(resBundle.getClass());
+		System.out.printf(resBundle.getString("Currency"));
 	}
 
 }
