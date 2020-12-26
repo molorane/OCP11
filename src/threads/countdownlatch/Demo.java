@@ -12,7 +12,7 @@ public class Demo {
 		// TODO Auto-generated method stub
 		ExecutorService executorService = Executors.newFixedThreadPool(4);
 		
-		CountDownLatch countDownLatch = new CountDownLatch(3);
+		CountDownLatch countDownLatch = new CountDownLatch(6);
 		executorService.submit(new Service(countDownLatch));
 		executorService.submit(new Service(countDownLatch));
 		executorService.submit(new Service(countDownLatch));

@@ -11,7 +11,7 @@ public class OptionalStream {
 		Optional<Double> max = temperatures.max(Double::compareTo);
 		if (max.isPresent()) {
 			System.out.println(max.get());
-		}
+		}Integer
 	}
 
 	public static void selectHighestTemperature(DoubleStream temperatures) {

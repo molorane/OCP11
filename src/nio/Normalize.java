@@ -16,6 +16,9 @@ public class Normalize {
 		
 		Path p3 = Paths.get("/a/../../../b"); // none normalized path
 		System.out.println(p3.normalize()); // /b
+		
+		Path p4 = Paths.get("/../b"); // none normalized path
+		System.out.println(p4.normalize()); // /b
 	}
 
 }

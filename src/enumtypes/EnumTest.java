@@ -29,6 +29,7 @@ public class EnumTest {
 		EnumTest enumTest2 = new EnumTest(PrinterType.INKJET);
 		enumTest2.feature();
 		System.out.println(PrinterType.valueOf("INKJEt"));
+		Enum e;
 	}
 
 }

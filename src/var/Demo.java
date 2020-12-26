@@ -11,8 +11,6 @@ public class Demo {
 		Predicate<String> p = (var c) -> true;
 		List<String> list = new ArrayList<>();
 		
-		var arr = new int[] {1,2,3,4};
-		
-		System.out.println(arr.length);
+		var arr = new int[] {};
 	}
 }

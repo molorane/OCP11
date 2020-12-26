@@ -12,7 +12,7 @@ public class DefaultSorter {
 		}
 		p();
 		
-		IntStream.rangeClosed(1, 1).forEach(System.out::println);
+		IntStream.range(0, 4).forEach(System.out::println);
 	}
 	
 	public static void p() {

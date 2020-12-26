@@ -38,6 +38,7 @@ public class RepeatableAnn {
 			MyAnno[] ann = m.getAnnotation(MyRepeatableAnno.class).value();
 			for(MyAnno ma: ann) {
 				System.out.println(ma.annotationType());
+				System.out.println(ma.str());
 			}
 		} catch (Exception ex) {
 			System.out.println("Method not found.");
