@@ -14,6 +14,7 @@ public class Mark {
 		System.out.println(br.readLine());
 		System.out.println(br.readLine());
 		br.reset(); // RESET
+		System.out.println(br.readLine());
 	}
 
 }

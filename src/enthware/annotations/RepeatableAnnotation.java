@@ -17,7 +17,7 @@ import java.lang.annotation.*;
 
 public class RepeatableAnnotation {
 
-	@Authors(value = @Author("bob"), team = "java")
+	@Authors(value = { @Author("bob"), @Author("love")}, team = "java")
 	String value;
 
 	public static void main(String[] args) {

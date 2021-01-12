@@ -1,9 +1,30 @@
 package enthware.enums;
 
 enum Coffee {
-	ESPRESSO("Very Strong"), MOCHA("Bold"), LATTE("Mild");
+	ESPRESSO("Very Strong"){
+
+		@Override
+		public void p() {
+			// TODO Auto-generated method stub
+			
+		}}, MOCHA("Bold"){
+
+			@Override
+			public void p() {
+				// TODO Auto-generated method stub
+				
+			}}, LATTE("Mild"){
+
+				@Override
+				public void p() {
+					// TODO Auto-generated method stub
+					
+				}};
 
 	public String strength;
+	static int i = 9;
+	
+	public void p() {};
 
 	Coffee(String strength) {
 		this.strength = strength;

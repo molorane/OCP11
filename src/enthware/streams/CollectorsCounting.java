@@ -9,7 +9,7 @@ public class CollectorsCounting {
 
 	public static void main(String[] args) {
 		List<String> names = Arrays.asList("charles", "chuk", "cynthia", "cho", "cici"); 
-		Collector<?,?, ?> x = names.stream().filter(name->name.length()>4).collect(Collectors.counting()); 
+		Long x = names.stream().filter(name->name.length()>4).collect(Collectors.counting()); 
 		System.out.println(x);
 	}
 

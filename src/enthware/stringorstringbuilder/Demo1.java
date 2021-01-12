@@ -17,6 +17,9 @@ public class Demo1 {
 		
 		StringBuilder sb = new StringBuilder("xxxx");
 		sb.replace(0, 3, "love");
+		
+		Float.valueOf("")
+	
 		System.out.println(sb);
 	}
 

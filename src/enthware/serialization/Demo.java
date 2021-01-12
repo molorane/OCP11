@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 class Student implements Serializable {
 	
+	Student(int age){}
+	
 	public static final long serialVersionUID = 1;
 	public String name;
 	public String grade;
@@ -28,13 +30,14 @@ public class Demo {
 	}
 	
 	public static void serialize()throws Exception  {
-		Student s = new Student( b );         
+		Student s = new Student(2);         
 		s.name = "bob";         
 		s.grade = "10";
 		FileOutputStream fis = new FileOutputStream("bob.ser");    
 		ObjectOutputStream is = new ObjectOutputStream(fis);    
 		is.writeObject(s);    
 		is.close(); 
+		deserialize();
 	}
 	
 	public static void deserialize()throws Exception  {

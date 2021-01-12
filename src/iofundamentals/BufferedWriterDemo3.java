@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+import java.util.List;
 
 public class BufferedWriterDemo3 {
 	
@@ -18,9 +19,19 @@ public class BufferedWriterDemo3 {
 	 * PrintWriter
 	 */
 	
+	class C{
+		
+		
+		public void m() {
+			int i = (i=9)*4;
+		}
+	}
+	
 
 	public static void main(String[] args) {
 	
+		List l;
+		l.get()
 		
 		try(var out = new BufferedWriter(
 						new FileWriter("test1.txt"))){

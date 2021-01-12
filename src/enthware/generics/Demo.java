@@ -2,6 +2,7 @@ package enthware.generics;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 
 class Base {
@@ -24,7 +25,7 @@ class Derived extends Base{
 	
 	@Override
 	public <T> Collection<T> transform(Collection<T> list){      
-		return new ArrayList<T>();    
+		return new HashSet<T>();    
 	}
 	
 }

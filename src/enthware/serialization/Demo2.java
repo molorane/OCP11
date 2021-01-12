@@ -1,0 +1,70 @@
+package enthware.serialization;
+
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Booby {
+	int i;
+
+	public Booby() {
+		i = 10;
+		System.out.print("Booby");
+	}
+}
+
+class Dooby extends Booby implements Serializable {
+	int j;
+
+	public Dooby() {
+		j = 20;
+		System.out.print("Dooby");
+	}
+}
+
+class Tooby extends Dooby {
+	int k;
+	Demo2 demo2;
+
+	public Tooby() {
+		k = 30;
+		System.out.print("Tooby");
+	}
+}
+
+public class Demo2 {
+	
+	int i;
+	
+	public Demo2() {
+		i = 12130;
+	}
+	
+	public Demo2(Demo2 d) {
+		Demo2 d1 = new Demo2();
+	}
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException{
+
+		var t = new Tooby();
+		t.i = 100;
+		var oos = new ObjectOutputStream(new FileOutputStream("test.ser"));
+		oos.writeObject(t);
+		oos.close();
+		
+		var ois = new ObjectInputStream(new FileInputStream("test.ser"));
+		t = (Tooby) ois.readObject();
+		ois.close();
+	
+		//System.err.println(t.demo2.i);
+		System.out.println(t.i + " " + t.j + " " + t.k);
+
+	}
+
+}
