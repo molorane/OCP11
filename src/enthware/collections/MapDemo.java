@@ -12,7 +12,7 @@ public class MapDemo {
 		map.put("a", 1);
 		map.put("b", 7);
 		map.merge("b", 1, (oldValue , newValue) -> oldValue + newValue);
-		map.merge("c", 3, (a,b) -> a + b);
+		map.merge("c", null, (a,b) -> a + b);
 		System.out.println(map);
 	}
 

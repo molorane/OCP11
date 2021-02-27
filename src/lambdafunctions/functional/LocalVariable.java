@@ -1,5 +1,8 @@
 package lambdafunctions.functional;
 
+import java.util.Collections;
+import java.util.Set;
+import java.util.function.Consumer;
 
 @FunctionalInterface
 interface Cust<T>{
@@ -21,11 +24,10 @@ public class LocalVariable {
 		Cust<String> localO = s -> s.equals(lv.objectVariable);
 		
 		String local = "OCP";
-		
+		int i = 0;
 		Cust<String> localV = s -> {
-				return s.equals(local);
+			return s.equals(local);
 		};
-		
 	}
 
 }

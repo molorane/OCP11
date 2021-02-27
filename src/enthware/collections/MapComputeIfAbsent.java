@@ -22,6 +22,7 @@ public class MapComputeIfAbsent {
 		// does not remove key bcoz key present
 		String r1 = map.computeIfAbsent(1, (key) -> null );
 		System.out.println(r1);
+		System.out.println(map);
 		
 		// does not remove key bcoz key present
 		String r2 = map.computeIfAbsent(2, (key) -> null );

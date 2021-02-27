@@ -36,8 +36,8 @@ public class ComparatorDemoVenkat {
 					people
 					.stream()
 					//.sorted(ComparatorDemo.comparator())
-					.sorted(Comparator.reverseOrder())
-					//.sorted(Comparator.comparing(Person::getName, String.CASE_INSENSITIVE_ORDER))
+					//.sorted(Comparator.reverseOrder())
+					.sorted(Comparator.comparing(Person::getName, String.CASE_INSENSITIVE_ORDER))
 					// .sorted(Comparator.comparing(Person::getName))
 					.collect(Collectors.toList()));
 	}

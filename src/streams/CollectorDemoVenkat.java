@@ -27,7 +27,7 @@ public class CollectorDemoVenkat {
 	}
 
 	public static void main(String[] args) {
-		groupingBy3();
+		toUnmodifiableList();
 	}
 
 	public static void toMap() {
@@ -61,8 +61,10 @@ public class CollectorDemoVenkat {
 
 		List<Person> people = getPeople();
 
-		System.out.println(people.stream().collect(Collectors.collectingAndThen(
-				Collectors.maxBy(Comparator.comparing(Person::getAge)), p -> p.map(Person::getName).orElse(""))));
+		System.out.println(people.stream().collect(
+				Collectors.collectingAndThen(
+				Collectors.maxBy(Comparator.comparing(Person::getAge)),
+				p -> p.map(Person::getName).orElse(""))));
 		// .collect(Collectors.maxBy(Comparator.comparingInt(Person::getAge))));
 		// //ToIntFunction
 		// .collect(Collectors.maxBy(Comparator.comparingLong(Person::getAge))));

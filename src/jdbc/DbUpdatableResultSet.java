@@ -15,7 +15,7 @@ public class DbUpdatableResultSet {
 				Connection connection = DbConnector.connectToDb();
 				Statement statement = 
 						connection.createStatement(
-								ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE);
+								ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
 				ResultSet resultSet = statement.executeQuery("SELECT * FROM course WHERE name='Medicine1'")) {
 			
 			System.out.println("Before the update");

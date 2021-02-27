@@ -19,7 +19,7 @@ public class DbConnector {
 	}
 
 	public static Connection connectToDbWithProp() throws SQLException {
-		String url = "jdbc:mysql://localhost:3306/dclm?serverTimezone=UTC";
+		String url = "jdbc:mysql://localhost:3306/sealapp?serverTimezone=UTC";
 		Properties p = new Properties();
 		p.setProperty("user", "root");
 		p.setProperty("password", "Blessing**4");

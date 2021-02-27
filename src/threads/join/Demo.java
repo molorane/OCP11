@@ -5,16 +5,15 @@ package threads.join;
 class ThreadJoining extends Thread {
 	@Override
 	public void run() {
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 1; i++) {
 			try {
-				Thread.sleep(500);
-				System.out.println("Current Thread: " + Thread.currentThread().getName());
+				Thread.sleep(5000);
+				System.out.println("Demo Thread: " + Thread.currentThread().getName());
 			}
 
 			catch (Exception ex) {
 				System.out.println("Exception has" + " been caught" + ex);
 			}
-			System.out.println(i);
 		}
 	}
 }
@@ -46,7 +45,7 @@ public class Demo {
 		// starts t3 after when thread t2 has died.
 		try {
 			System.out.println("Current Thread: " + Thread.currentThread().getName());
-			t2.join();
+			t2.join(9);
 		}
 		catch (Exception ex) {
 			System.out.println("Exception has been" + " caught" + ex);

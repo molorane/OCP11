@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Function;
 
 class C  { 
 	
@@ -17,6 +19,8 @@ class C  {
 
 public class Demo2 extends C {
 	
+	AtomicInteger i;
+	
 	@Override
 	public Map<Integer,Integer> getMap(Number t,Number z){
 		return new HashMap<Integer, Integer>();
@@ -26,16 +30,22 @@ public class Demo2 extends C {
 		System.out.println(o.getClass());
 	}
 	
-	public <P> void k() {
+	public <P extends Number> void k() {
 		
 	}
 
 	public static void main(String[] args) {
 		@SuppressWarnings("rawtypes")
-		List list = new ArrayList();
+		List<String> list = new ArrayList<>();
 		list.add("one");
 		list.add("two");
-		list.add(7);
+		
+		Function<List<String>, List<String>> f = li -> li.subList(1, 2);
+		
+		List<String> v = f.apply(list);
+		v.add("three");
+		
+		System.err.println(v);
 		
 		list.forEach(Demo2::En);
 	}

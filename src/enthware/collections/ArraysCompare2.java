@@ -13,8 +13,8 @@ public class ArraysCompare2 {
 		int y = Arrays.compare(b, c);
 		System.out.println(x + " " + y);
 		
-		int[] ia1 = { }; 
-		int[] ia2 = { };
+		Integer[] ia1 = { 1 }; 
+		Integer[] ia2 = {  };
 		System.out.println(Arrays.compare(ia1, ia2));
 	}
 

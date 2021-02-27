@@ -28,6 +28,25 @@ class C implements A.B{
 }
 
 public class StaticNested {
+	
+	enum P{
+
+		E {
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+		}, R {
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+
+		public abstract void run();
+	}
 
 	public static void main(String[] args) {
 		A.C c = new A.C();

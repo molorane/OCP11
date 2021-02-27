@@ -7,7 +7,7 @@ import java.util.List;
 
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAn{
-	String str();
+	abstract String str();
 	int value();
 }
 

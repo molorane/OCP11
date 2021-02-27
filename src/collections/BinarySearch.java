@@ -10,7 +10,7 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		List<Integer> list = Arrays.asList(6,5,4,3,2,1);
+		List<Integer> list = Arrays.asList(1,2,3,5,6,7);
 		//Collections.sort(list);
 		
 		int i = Collections.binarySearch(list, 4, new Comparator<Integer>() {

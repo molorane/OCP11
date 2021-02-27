@@ -42,5 +42,6 @@ public class TestColor {
 		// note that we do not (and cannot) instantiate Shape class for using Color class
 		Shape.Color white = new Shape.Color(255, 255, 255);
 		System.out.println("White color has values:" + white);
+		System.out.println(V.b);
 	}
 }

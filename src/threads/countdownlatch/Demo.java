@@ -10,7 +10,7 @@ public class Demo {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		ExecutorService executorService = Executors.newFixedThreadPool(4);
+		ExecutorService executorService = Executors.newFixedThreadPool(2);
 		
 		CountDownLatch countDownLatch = new CountDownLatch(6);
 		executorService.submit(new Service(countDownLatch));
@@ -19,7 +19,7 @@ public class Demo {
 		executorService.submit(new Service(countDownLatch));
 		executorService.submit(new Service(countDownLatch));
 		
-		countDownLatch.await(10,TimeUnit.SECONDS);
+		countDownLatch.await();
 		
 		System.out.println("All dependent services initialized.");
 		executorService.shutdown();		

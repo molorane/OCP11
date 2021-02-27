@@ -16,7 +16,7 @@ public class DefaultSorter {
 	}
 	
 	public static void p() {
-		"abracadabra".chars().distinct().peek(ch -> System.out.printf("%c ", ch)).
+		"abracadabra".chars().distinct().peek((ch)-> System.out.printf("%c ", ch)).
 		count();
 	}
 }

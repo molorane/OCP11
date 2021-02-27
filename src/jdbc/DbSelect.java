@@ -15,7 +15,7 @@ public class DbSelect {
 				ResultSet resultSet = statement.executeQuery("SELECT * FROM course")) {
 			
 			System.out.println("ID \tfName \tlName");
-			resultSet.absolute(-12);
+			//resultSet.absolute(-12);
 			while (resultSet.next()) {
 				System.out.println(resultSet.getObject(1) + "\t" + resultSet.getString("name"));
 			}

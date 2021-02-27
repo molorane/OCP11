@@ -10,7 +10,7 @@ public class MapComputeIfPresent {
 		
 		Map<Integer, String> map = new LinkedHashMap<>();
 		map.put(1,  "Java");
-		map.put(2, "oka");
+		map.put(2, "Spring");
 		
 		System.out.println(map);
 		

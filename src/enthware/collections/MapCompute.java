@@ -9,13 +9,14 @@ public class MapCompute {
 	public static void main(String[] args) {
 		
 		Map<Integer, String> map = new LinkedHashMap<>();
-		map.put(1,  "OCP");
+		map.put(1,  "Java");
 		map.put(2, null);
 		
 		System.out.println(map);
 		
 		map.compute(1, (key, oldVal) -> oldVal.concat("Script"));
 		map.compute(2, (key, oldVal) -> "Framework");
+		map.computeIfPresent(2, (key,oldVal) -> null);
 		System.out.println(map);
 		
 		// removes key bcoz compute returns null

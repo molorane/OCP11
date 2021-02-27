@@ -2,10 +2,10 @@ package enthware.ooa.a;
 
 import enthware.ooa.b.AccessTester;
 
-public class Test {
+public class Test{
 	
 	public Test() {
-		AccessTest at = new AccessTester();
+		AccessTest at = new AccessTest();
 		at.c();
 	}
 

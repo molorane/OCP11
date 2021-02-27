@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
@@ -13,7 +14,7 @@ public class CollectorsToTreeSet {
 		String[] roseQuote = "Complex code Java11 Streams".split(" ");
 		Set<String> words = 
 				Arrays.stream(roseQuote)
-				.collect(Collectors.toCollection(TreeSet::new));
+				.collect(Collectors.toCollection(HashSet::new));
 		
 		words.forEach(System.out::println);
 		
