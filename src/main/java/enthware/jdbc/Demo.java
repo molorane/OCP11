@@ -11,9 +11,6 @@ public class Demo {
 		
 		Statement st = null;
 		Connection con = DriverManager.getConnection("","","");
-		try(st){
-			st = null;
-		}
 
 	}
 
