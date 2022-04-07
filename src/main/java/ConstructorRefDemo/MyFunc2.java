@@ -6,7 +6,6 @@
 package ConstructorRefDemo;
 
 /**
- *
  * @author madw
  */
 public interface MyFunc2 {

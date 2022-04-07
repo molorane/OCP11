@@ -6,7 +6,6 @@
 package ConstructorRefDemo3;
 
 /**
- *
  * @author madw
  */
 // A simple generic class.
@@ -29,5 +28,6 @@ class MyClass<T> {
     T getVal() {
         return val;
     }
-;
+
+    ;
 }

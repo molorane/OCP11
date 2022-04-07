@@ -8,19 +8,19 @@ import java.util.concurrent.Future;
 
 public class Demo5 {
 
-	public static void main(String[] args) throws InterruptedException, ExecutionException {
-		// TODO Auto-generated method stub
-		
-		ExecutorService service = Executors.newFixedThreadPool(4);
-		
-		Callable<String> c = () -> "Nomfundo";
-		
-		Future<? extends String> future = service.submit(c);
-		
-		String o = future.get();
-		System.out.println(o);
-		
-		service.shutdown();
-	}
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+        // TODO Auto-generated method stub
+
+        ExecutorService service = Executors.newFixedThreadPool(4);
+
+        Callable<String> c = () -> "Nomfundo";
+
+        Future<? extends String> future = service.submit(c);
+
+        String o = future.get();
+        System.out.println(o);
+
+        service.shutdown();
+    }
 
 }

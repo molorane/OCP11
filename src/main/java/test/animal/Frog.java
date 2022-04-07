@@ -1,10 +1,10 @@
 package test.animal;
 
 public class Frog {
-	
-	protected void ribbit() {
-	}
 
-	void jump() {
-	}
+    protected void ribbit() {
+    }
+
+    void jump() {
+    }
 }

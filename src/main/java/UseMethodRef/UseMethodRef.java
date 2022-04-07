@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- *
  * @author madw
  */
 public class UseMethodRef {

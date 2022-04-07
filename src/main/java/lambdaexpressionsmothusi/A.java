@@ -6,18 +6,16 @@
 package lambdaexpressionsmothusi;
 
 /**
- *
  * @author madw
  */
 public class A {
 
     private String name;
-    
+
     public A(String name) {
-        this.name= name;
+        this.name = name;
     }
-    
-    
+
 
     @Override
     public String toString() {
@@ -37,6 +35,6 @@ public class A {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
+
+
 }

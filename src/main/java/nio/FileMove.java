@@ -8,15 +8,15 @@ import java.nio.file.StandardCopyOption;
 
 
 public class FileMove {
-	public static void main(String[] args) {
-		
-		Path pathSource = Paths.get("C:\\Files\\subdir");
-		Path pathDestination = Paths.get("C:\\Files\\move\\subdir");
-		try {
-			Files.move(pathSource, pathDestination, StandardCopyOption.REPLACE_EXISTING);
-			System.out.println("Source file moved successfully");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+
+        Path pathSource = Paths.get("C:\\Files\\subdir");
+        Path pathDestination = Paths.get("C:\\Files\\move\\subdir");
+        try {
+            Files.move(pathSource, pathDestination, StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Source file moved successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

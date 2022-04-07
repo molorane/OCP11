@@ -7,14 +7,14 @@ import java.nio.file.Paths;
 
 public class IsSameFile {
 
-	public static void main(String[] args) throws IOException {
-		
-		Path p1 = Paths.get("a");
-		Path p2 = Paths.get("demo2.tx");
+    public static void main(String[] args) throws IOException {
 
-		boolean same = Files.isSameFile(p1, p2);
-		System.out.println(same);
-		
-	}
+        Path p1 = Paths.get("a");
+        Path p2 = Paths.get("demo2.tx");
+
+        boolean same = Files.isSameFile(p1, p2);
+        System.out.println(same);
+
+    }
 
 }

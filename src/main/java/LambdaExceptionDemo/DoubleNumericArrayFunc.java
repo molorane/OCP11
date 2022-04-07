@@ -6,7 +6,6 @@
 package LambdaExceptionDemo;
 
 /**
- *
  * @author madw
  */
 public interface DoubleNumericArrayFunc {

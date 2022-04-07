@@ -6,7 +6,6 @@
 package GenericMethodRefDemo;
 
 /**
- *
  * @author madw
  */
 // This class defines a method called countMatching() that

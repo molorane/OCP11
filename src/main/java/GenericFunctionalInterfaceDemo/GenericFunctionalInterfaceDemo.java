@@ -6,7 +6,6 @@
 package GenericFunctionalInterfaceDemo;
 
 /**
- *
  * @author madw
  */
 public class GenericFunctionalInterfaceDemo {
@@ -28,7 +27,7 @@ public class GenericFunctionalInterfaceDemo {
                 + reverse.func("Expression"));
 
         System.out.println("");
-        
+
         // Now, use an Integer-based version of SomeFunc.
         SomeFunc<Integer> factorial = (n) -> {
             int result = 1;

@@ -7,14 +7,14 @@ import java.nio.file.Paths;
 
 
 public class FileDelete {
-	public static void main(String[] args) {
-		
-		Path pathSource = Paths.get("C:\\Files\\move\\subdir\\Jehoshaphat.pptx");
-		try {
-			Files.delete(pathSource);
-			System.out.println("File deleted successfully");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+
+        Path pathSource = Paths.get("C:\\Files\\move\\subdir\\Jehoshaphat.pptx");
+        try {
+            Files.delete(pathSource);
+            System.out.println("File deleted successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

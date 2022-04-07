@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- *
  * @author madw
  */
 public class HashMapDemo {
@@ -25,7 +24,7 @@ public class HashMapDemo {
         hm.put("Jane Baker", 1378.00);
         hm.put("Tod Hall", 99.22);
         hm.put("Ralph Smith", -19.08);
-        
+
         System.out.println(hm.getOrDefault("Tod Hall", 543.2));
         // Get a set of the entries.
         Set<Map.Entry<String, Double>> set = hm.entrySet();
@@ -41,6 +40,6 @@ public class HashMapDemo {
         double balance = hm.get("John Doe");
         hm.put("John Doe", balance + 1000);
 
-        System.out.println("John Doe's new balance: "+ hm.get("John Doe"));
+        System.out.println("John Doe's new balance: " + hm.get("John Doe"));
     }
 }

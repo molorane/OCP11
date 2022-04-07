@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 
 public class FilesDotGetOwner {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		Path path = Paths.get("gorilla.txt");
-		System.err.println(Files.getOwner(path).getName());
-	}
+        Path path = Paths.get("gorilla.txt");
+        System.err.println(Files.getOwner(path).getName());
+    }
 }

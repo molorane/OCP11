@@ -6,7 +6,6 @@
 package ConstructorRefDemo3;
 
 /**
- *
  * @author madw
  */
 public class ConstructorRefDemo3 {

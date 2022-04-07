@@ -6,7 +6,6 @@
 package InstanceMethWithObjectRefDemo;
 
 /**
- *
  * @author madw
  */
 public class InstanceMethWithObjectRefDemo {
@@ -28,9 +27,9 @@ public class InstanceMethWithObjectRefDemo {
         int count;
         // Create an array of HighTemp objects.
         HighTemp[] weekDayHighs = {new HighTemp(89), new HighTemp(82),
-            new HighTemp(90), new HighTemp(89),
-            new HighTemp(89), new HighTemp(91),
-            new HighTemp(84), new HighTemp(83)};
+                new HighTemp(90), new HighTemp(89),
+                new HighTemp(89), new HighTemp(91),
+                new HighTemp(84), new HighTemp(83)};
 
         // Use counter() with arrays of the class HighTemp.
         // Notice that a reference to the instance method
@@ -41,9 +40,9 @@ public class InstanceMethWithObjectRefDemo {
 
         // Now, create and use another array of HighTemp objects.
         HighTemp[] weekDayHighs2 = {new HighTemp(32), new HighTemp(12),
-            new HighTemp(24), new HighTemp(19),
-            new HighTemp(18), new HighTemp(12),
-            new HighTemp(-1), new HighTemp(13)};
+                new HighTemp(24), new HighTemp(19),
+                new HighTemp(18), new HighTemp(12),
+                new HighTemp(-1), new HighTemp(13)};
 
         count = counter(weekDayHighs2, HighTemp::sameTemp,
                 new HighTemp(12));
@@ -54,7 +53,7 @@ public class InstanceMethWithObjectRefDemo {
         count = counter(weekDayHighs, HighTemp::lessThanTemp,
                 new HighTemp(89));
         System.out.println(count + " days had a high less than 89");
-        
+
         count = counter(weekDayHighs2, HighTemp::lessThanTemp,
                 new HighTemp(19));
         System.out.println(count + " days had a high of less than 19");

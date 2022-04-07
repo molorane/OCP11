@@ -6,7 +6,6 @@
 package MethodRefDemo2;
 
 /**
- *
  * @author madw
  */
 public interface StringFunc {

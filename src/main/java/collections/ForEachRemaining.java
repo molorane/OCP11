@@ -7,8 +7,8 @@ import java.util.function.Consumer;
 
 public class ForEachRemaining {
 
-	public static void main(String[] args) {
-		List<String> fruits = new ArrayList<>();
+    public static void main(String[] args) {
+        List<String> fruits = new ArrayList<>();
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Grapes");
@@ -16,10 +16,10 @@ public class ForEachRemaining {
         fruits.add(null);
 
         Iterator<String> iterator = fruits.iterator();
-        
+
         Consumer<String> consumer = (str) -> System.out.println(str);
 
         iterator.forEachRemaining(consumer);
-	}
+    }
 
 }

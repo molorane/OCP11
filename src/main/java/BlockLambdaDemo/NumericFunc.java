@@ -6,7 +6,6 @@
 package BlockLambdaDemo;
 
 /**
- *
  * @author madw
  */
 @FunctionalInterface

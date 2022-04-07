@@ -6,7 +6,6 @@
 package ConstructorRefDemo2;
 
 /**
- *
  * @author madw
  */
 class MyClass<T> {
@@ -22,6 +21,11 @@ class MyClass<T> {
     MyClass() {
         val = null;
     }
-    // ...  
-    T getVal() { return val; };
+
+    // ...
+    T getVal() {
+        return val;
+    }
+
+    ;
 }

@@ -1,31 +1,36 @@
 package enthware.annotations;
 
 class Account {
-	int id;
-	double balance;
+    int id;
+    double balance;
 
-	@Deprecated
-	public Account() {
-	};
+    @Deprecated
+    public Account() {
+    }
 
-	public Account(int id) {
-		this.id = id;
-	};
+    ;
 
-	public void transact(double amount) {
-		balance = balance + amount;
-	}
+    public Account(int id) {
+        this.id = id;
+    }
+
+    ;
+
+    public void transact(double amount) {
+        balance = balance + amount;
+    }
 }
 
 class NewAccount extends Account {
-	public NewAccount() {
-	}
+    public NewAccount() {
+    }
 }
+
 public class TestClass {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Account c = new NewAccount();
-	}
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Account c = new NewAccount();
+    }
 
 }

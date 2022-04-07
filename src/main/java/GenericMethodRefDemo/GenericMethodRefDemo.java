@@ -6,7 +6,6 @@
 package GenericMethodRefDemo;
 
 /**
- *
  * @author madw
  */
 public class GenericMethodRefDemo {

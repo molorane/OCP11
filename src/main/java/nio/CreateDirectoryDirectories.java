@@ -7,13 +7,13 @@ import java.nio.file.Paths;
 
 public class CreateDirectoryDirectories {
 
-	public static void main(String[] args) throws IOException {
-		
-		Path p1 = Paths.get("a/b");
+    public static void main(String[] args) throws IOException {
 
-		Files.createDirectories(p1);
-		Files.createDirectory(p1);
-		
-	}
+        Path p1 = Paths.get("a/b");
+
+        Files.createDirectories(p1);
+        Files.createDirectory(p1);
+
+    }
 
 }

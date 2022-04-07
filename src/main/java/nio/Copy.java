@@ -7,13 +7,13 @@ import java.nio.file.Paths;
 
 public class Copy {
 
-	public static void main(String[] args) throws IOException {
-		
-		Path p1 = Paths.get("demo.txt");
-		Path p2 = Paths.get("demo2.tx");
+    public static void main(String[] args) throws IOException {
 
-		Files.copy(p1,p2);
-		
-	}
+        Path p1 = Paths.get("demo.txt");
+        Path p2 = Paths.get("demo2.tx");
+
+        Files.copy(p1, p2);
+
+    }
 
 }

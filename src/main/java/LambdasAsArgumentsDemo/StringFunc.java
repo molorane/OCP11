@@ -6,7 +6,6 @@
 package LambdasAsArgumentsDemo;
 
 /**
- *
  * @author madw
  */
 public interface StringFunc {

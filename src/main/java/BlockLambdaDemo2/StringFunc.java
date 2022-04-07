@@ -6,7 +6,6 @@
 package BlockLambdaDemo2;
 
 /**
- *
  * @author madw
  */
 public interface StringFunc {

@@ -6,26 +6,25 @@
 package BlockLambdaDemo;
 
 /**
- *
  * @author madw
  */
 public class BlockLambdaDemo {
 
     public static void main(String[] args) {
-        
+
         int age = 1;
-        
+
         NumericFunc factorial = (n) -> {
-           int result = age;
-           
-           for(int i=1;i<=n;i++)
-               result *= i;
-           return result;
+            int result = age;
+
+            for (int i = 1; i <= n; i++)
+                result *= i;
+            return result;
         };
-      
-        System.out.println("Factorial of 5 is "+
+
+        System.out.println("Factorial of 5 is " +
                 factorial.funct(5));
-        System.out.println("Factorial of 3 is "+
+        System.out.println("Factorial of 3 is " +
                 factorial.funct(3));
     }
 

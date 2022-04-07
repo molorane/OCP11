@@ -6,17 +6,16 @@
 package javapuzzles;
 
 /**
- *
  * @author madw
  */
 public class Byting {
-    
+
     public static void main(String[] args) {
         test();
     }
-    
+
     public static void test() {
-        for(byte b=0;b<=127;b++) {
+        for (byte b = 0; b <= 127; b++) {
             System.out.println(b);
         }
     }

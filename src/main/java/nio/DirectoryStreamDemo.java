@@ -12,25 +12,25 @@ import java.util.TreeSet;
 
 public class DirectoryStreamDemo {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		HashSet<String> s = new HashSet<>();
-		
-		Path p = Paths.get(System.getProperty("user.dir"));
-		
-		System.out.println(System.getProperty("user.dir"));
-		
-		try(DirectoryStream<Path> paths = Files.newDirectoryStream(p)){
-			
-			for(Path path: paths) {
-				BasicFileAttributes bfa = Files.readAttributes(path, BasicFileAttributes.class);
-				System.out.println(path.toAbsolutePath() + ", is directoty "+bfa.isDirectory());
-			}
-		}catch(IOException e) {
-			System.err.println(e);
-		}
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-	}
+        HashSet<String> s = new HashSet<>();
+
+        Path p = Paths.get(System.getProperty("user.dir"));
+
+        System.out.println(System.getProperty("user.dir"));
+
+        try (DirectoryStream<Path> paths = Files.newDirectoryStream(p)) {
+
+            for (Path path : paths) {
+                BasicFileAttributes bfa = Files.readAttributes(path, BasicFileAttributes.class);
+                System.out.println(path.toAbsolutePath() + ", is directoty " + bfa.isDirectory());
+            }
+        } catch (IOException e) {
+            System.err.println(e);
+        }
+
+    }
 
 }

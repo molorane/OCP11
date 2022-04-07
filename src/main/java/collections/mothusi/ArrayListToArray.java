@@ -8,7 +8,6 @@ package collections.mothusi;
 import java.util.ArrayList;
 
 /**
- *
  * @author madw
  */
 public class ArrayListToArray {

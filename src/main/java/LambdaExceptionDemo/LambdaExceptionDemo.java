@@ -6,7 +6,6 @@
 package LambdaExceptionDemo;
 
 /**
- *
  * @author madw
  */
 public class LambdaExceptionDemo {
@@ -17,7 +16,7 @@ public class LambdaExceptionDemo {
         // This block lambda computes the average of an array of doubles.
         DoubleNumericArrayFunc average = (n) -> {
             double sum = 0;
-            
+
             if (n.length == 0) {
                 throw new EmptyArrayException();
             }

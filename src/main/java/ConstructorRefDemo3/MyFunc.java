@@ -6,7 +6,6 @@
 package ConstructorRefDemo3;
 
 /**
- *
  * @author madw
  */
 // Implement a simple class factory using a constructor reference.

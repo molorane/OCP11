@@ -6,71 +6,70 @@
 package iofundamentals.serialize;
 
 /**
- *
  * @author moloranemothusimichael
  */
-public class User implements java.io.Serializable{
-    
+public class User implements java.io.Serializable {
+
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
-	 * 
-	 */
-	private transient int Id;
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private transient int Id;
     private String name;
     private String password;
     public static double salary;
-    
+
     public static double getSalary() {
-		return salary;
-	}
+        return salary;
+    }
 
-	public static void setSalary(double salary) {
-		User.salary = salary;
-	}
+    public static void setSalary(double salary) {
+        User.salary = salary;
+    }
 
-	public User(){
+    public User() {
         super();
     }
-    
-    public User(int Id,String name,String password){
+
+    public User(int Id, String name, String password) {
         super();
-        
+
         this.Id = Id;
         this.name = name;
         this.password = password;
     }
-    
-    public int getId(){
+
+    public int getId() {
         return this.Id;
     }
-    
-    public String getName(){
+
+    public String getName() {
         return this.name;
     }
-    
-    public String getPassword(){
+
+    public String getPassword() {
         return this.password;
     }
-    
-    public void setId(int Id){
+
+    public void setId(int Id) {
         this.Id = Id;
     }
-    
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
-    
-    public void setPassword(String password){
+
+    public void setPassword(String password) {
         this.password = password;
     }
-    
+
     @Override
-    public String toString(){
-        return "ID:"+this.Id+", Name:"+this.name+", Password:"+this.password
-        		+", Salary:"+salary;
+    public String toString() {
+        return "ID:" + this.Id + ", Name:" + this.name + ", Password:" + this.password
+                + ", Salary:" + salary;
     }
-    
+
 }

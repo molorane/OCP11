@@ -8,16 +8,16 @@ import java.nio.file.StandardCopyOption;
 
 
 public class FileCopy {
-	
-	public static void main(String[] args) {
-		Path pathSource = Paths.get("src\\nio\\PathCompare1.java");
-		Path pathDestination = Paths.get("C:\\Files\\PathCompare1");
-		try {
-			Files.copy(pathSource, pathDestination, StandardCopyOption.REPLACE_EXISTING);
-			System.out.println("Source file copied successfully");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
+
+    public static void main(String[] args) {
+        Path pathSource = Paths.get("src\\nio\\PathCompare1.java");
+        Path pathDestination = Paths.get("C:\\Files\\PathCompare1");
+        try {
+            Files.copy(pathSource, pathDestination, StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Source file copied successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

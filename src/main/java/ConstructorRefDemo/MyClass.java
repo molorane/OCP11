@@ -6,7 +6,6 @@
 package ConstructorRefDemo;
 
 /**
- *
  * @author madw
  */
 public class MyClass {
@@ -27,5 +26,6 @@ public class MyClass {
     int getVal() {
         return val;
     }
-;
+
+    ;
 }

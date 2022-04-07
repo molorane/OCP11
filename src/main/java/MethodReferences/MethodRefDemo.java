@@ -6,7 +6,6 @@
 package MethodReferences;
 
 /**
- *
  * @author madw
  */
 public class MethodRefDemo {

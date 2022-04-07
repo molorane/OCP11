@@ -7,11 +7,11 @@ import java.sql.Statement;
 
 public class Demo {
 
-	public static void main(String[] args) throws SQLException {
-		
-		Statement st = null;
-		Connection con = DriverManager.getConnection("","","");
+    public static void main(String[] args) throws SQLException {
 
-	}
+        Statement st = null;
+        Connection con = DriverManager.getConnection("", "", "");
+
+    }
 
 }

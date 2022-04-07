@@ -6,7 +6,6 @@
 package MethodReferences;
 
 /**
- *
  * @author madw
  */
 public class MyStringOps {
@@ -20,5 +19,5 @@ public class MyStringOps {
         }
         return result;
     }
-    
+
 }

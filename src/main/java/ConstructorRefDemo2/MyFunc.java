@@ -6,7 +6,6 @@
 package ConstructorRefDemo2;
 
 /**
- *
  * @author madw
  */
 // MyFunc is now a generic functional interface.

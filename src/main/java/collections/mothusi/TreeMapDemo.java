@@ -10,7 +10,6 @@ import java.util.Set;
 import java.util.TreeMap;
 
 /**
- *
  * @author madw
  */
 public class TreeMapDemo {
@@ -37,6 +36,6 @@ public class TreeMapDemo {
         // Deposit 1000 into John Doe's account.
         double balance = tm.get("John Doe");
         tm.put("John Doe", balance + 1000);
-        System.out.println("John Doe's new balance: "+ tm.get("John Doe"));
+        System.out.println("John Doe's new balance: " + tm.get("John Doe"));
     }
 }

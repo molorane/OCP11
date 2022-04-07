@@ -6,7 +6,6 @@
 package GenericMethodRefDemo;
 
 /**
- *
  * @author madw
  */
 // Demonstrate a method reference to a generic method

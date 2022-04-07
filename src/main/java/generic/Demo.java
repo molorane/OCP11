@@ -3,61 +3,61 @@ package generic;
 import java.util.ArrayDeque;
 import java.util.Map;
 
-class Bbb{
-	
+class Bbb {
+
 }
 
-interface Ccc{
-	
+interface Ccc {
+
 }
 
-interface Ddd{
-	
+interface Ddd {
+
 }
 
-class E<T extends Bbb & Ccc , Ddd>{
-	
+class E<T extends Bbb & Ccc, Ddd> {
+
 }
 
 class Stats<T extends Number> {
-	T num[];
+    T num[];
 
-	public Stats(T num[]) {
-		this.num = num;
-	}
+    public Stats(T num[]) {
+        this.num = num;
+    }
 
-	public double average() {
-		double sum = 0;
+    public double average() {
+        double sum = 0;
 
-		for (int i = 0; i < num.length; i++)
-			sum += num[i].doubleValue();
+        for (int i = 0; i < num.length; i++)
+            sum += num[i].doubleValue();
 
-		return sum / num.length;
-	}
-	
-	public boolean sameAvg(Stats<?> ob) {
-		return average() == ob.average();
-	}
+        return sum / num.length;
+    }
 
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return num.toString();
-	}
+    public boolean sameAvg(Stats<?> ob) {
+        return average() == ob.average();
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return num.toString();
+    }
 }
 
 public class Demo<Demo> {
-	
-	public <X extends Number> X p(){
-		return null;
-	}
 
-	public static void main(String[] args) {
-		ArrayDeque<Integer> d = new ArrayDeque<>();
-		d.offer(18);
-		d.offer(5);
-		d.push(13);
-		System.out.println(d.poll() + " "+ d.poll());
-	}
+    public <X extends Number> X p() {
+        return null;
+    }
+
+    public static void main(String[] args) {
+        ArrayDeque<Integer> d = new ArrayDeque<>();
+        d.offer(18);
+        d.offer(5);
+        d.push(13);
+        System.out.println(d.poll() + " " + d.poll());
+    }
 
 }

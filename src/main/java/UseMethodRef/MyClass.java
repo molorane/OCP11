@@ -6,7 +6,6 @@
 package UseMethodRef;
 
 /**
- *
  * @author madw
  */
 public class MyClass {

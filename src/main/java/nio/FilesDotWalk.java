@@ -9,10 +9,10 @@ import java.util.stream.Stream;
 
 public class FilesDotWalk {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		Path p = Paths.get("src");
-		Files.walk(p, 1).forEach(System.out::println);
-	}
+        Path p = Paths.get("src");
+        Files.walk(p, 1).forEach(System.out::println);
+    }
 
 }

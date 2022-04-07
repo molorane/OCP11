@@ -19,18 +19,18 @@ public class JavaPuzzles {
     /**
      * @param args the command line arguments
      */
-    
+
     public static void main(String[] args) {
         // TODO code application logic here
 
-        List<Integer> list = Arrays.asList(1,2,3,3,4,5,6,7,8,9,10,10);
-        
-        list = list.stream().map(x->x*x).collect(Collectors.toList());
-        
+        List<Integer> list = Arrays.asList(1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 10);
+
+        list = list.stream().map(x -> x * x).collect(Collectors.toList());
+
         Set<Integer> set = list.stream().sorted().collect(Collectors.toSet());
-        
+
         set.forEach(action -> System.out.println(action));
-        
+
         //System.out.println(str.toString());
         //System.out.println(reverse);
     }

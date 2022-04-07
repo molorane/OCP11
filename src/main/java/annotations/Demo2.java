@@ -9,41 +9,41 @@ import java.lang.reflect.Method;
 
 @Retention(RetentionPolicy.RUNTIME)
 @interface MultiValue {
-	int getValue() default 2;
+    int getValue() default 2;
 
-	String getMessage();
+    String getMessage();
 
-	double getDouble();
+    double getDouble();
 }
 
 public class Demo2 {
-	
-	@MultiValue(getDouble = 900, getMessage = "Hello")
-	static String x;
 
-	@MultiValue(getDouble = 9, getMessage = "Hello")
-	public static void display() {
+    @MultiValue(getDouble = 900, getMessage = "Hello")
+    static String x;
 
-	}
+    @MultiValue(getDouble = 9, getMessage = "Hello")
+    public static void display() {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    }
 
-		try {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-			Class<?> c = new Demo2().getClass();
+        try {
 
-			Method m = c.getMethod("display");
-			Field f = c.getField("x");
+            Class<?> c = new Demo2().getClass();
 
-			MultiValue a = f.getAnnotation(MultiValue.class);
+            Method m = c.getMethod("display");
+            Field f = c.getField("x");
 
-			System.out.println(a.getDouble());
+            MultiValue a = f.getAnnotation(MultiValue.class);
 
-		} catch (Exception e) {
-			System.out.println(e);
-		}
+            System.out.println(a.getDouble());
 
-	}
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
 
 }

@@ -8,51 +8,51 @@ import java.util.Optional;
 
 public class FlatMap {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-		List<User> users = Arrays.asList(
-				new User("Millicent", Arrays.asList("Matric", "BA", "CA")),
-				new User("Mothusi", Arrays.asList("COSC", "Bsc", "Honors","OCA")), 
-				new User("Molorane", Arrays.asList("LGCSE", "Bsc")));
-		
-		Optional<Object> v = 
-				Optional.ofNullable(users.stream()
-				.map(user -> user.getCertificates().toArray(new String[10]))
-				.filter(ls -> ls.length > 2)
-				.flatMap(Arrays::stream)
-				.findAny());
-		
-		v.ifPresent(System.out::println);
-	}
+        List<User> users = Arrays.asList(
+                new User("Millicent", Arrays.asList("Matric", "BA", "CA")),
+                new User("Mothusi", Arrays.asList("COSC", "Bsc", "Honors", "OCA")),
+                new User("Molorane", Arrays.asList("LGCSE", "Bsc")));
 
-	static class User {
-		private String name;
-		private List<String> certificate;
+        Optional<Object> v =
+                Optional.ofNullable(users.stream()
+                        .map(user -> user.getCertificates().toArray(new String[10]))
+                        .filter(ls -> ls.length > 2)
+                        .flatMap(Arrays::stream)
+                        .findAny());
 
-		public User(String name, List<String> certificate) {
-			super();
-			this.name = name;
-			this.certificate = certificate;
-		}
+        v.ifPresent(System.out::println);
+    }
 
-		public String getName() {
-			return name;
-		}
+    static class User {
+        private String name;
+        private List<String> certificate;
 
-		public void setName(String name) {
-			this.name = name;
-		}
+        public User(String name, List<String> certificate) {
+            super();
+            this.name = name;
+            this.certificate = certificate;
+        }
 
-		public List<String> getCertificates() {
-			return certificate;
-		}
+        public String getName() {
+            return name;
+        }
 
-		public void setCertificates(List<String> certificate) {
-			this.certificate = certificate;
-		}
+        public void setName(String name) {
+            this.name = name;
+        }
 
-		
-	}
+        public List<String> getCertificates() {
+            return certificate;
+        }
+
+        public void setCertificates(List<String> certificate) {
+            this.certificate = certificate;
+        }
+
+
+    }
 
 }

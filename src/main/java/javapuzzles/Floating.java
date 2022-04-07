@@ -6,7 +6,6 @@
 package javapuzzles;
 
 /**
- *
  * @author madw
  */
 public class Floating {

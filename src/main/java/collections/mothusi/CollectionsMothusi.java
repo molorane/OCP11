@@ -14,7 +14,6 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
- *
  * @author madw
  */
 public class CollectionsMothusi {
@@ -24,37 +23,37 @@ public class CollectionsMothusi {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         SortedSet<Integer> list = new TreeSet<>();
         list.add(23);
         list.add(10);
         list.add(24);
         System.out.println(list);
-        
-        for(Integer i: list){
+
+        for (Integer i : list) {
             i = 90;
         }
         System.out.println(list);
-        
+
         List<Integer> listA = new ArrayList<>();
         listA.add(23);
         listA.add(10);
         listA.add(24);
         ListIterator<Integer> li = listA.listIterator();
-        while(li.hasNext()){
-            if(li.next().equals(23)){
+        while (li.hasNext()) {
+            if (li.next().equals(23)) {
                 li.set(456);
                 System.out.println("equal");
             }
         }
         System.out.println(list);
-        
+
         Iterator<Integer> l = listA.iterator();
-        while(l.hasNext()){
-            if(l.next().equals(23)){
+        while (l.hasNext()) {
+            if (l.next().equals(23)) {
                 System.out.println("equal");
             }
         }
     }
-    
+
 }

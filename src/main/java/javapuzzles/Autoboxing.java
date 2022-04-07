@@ -9,7 +9,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- *
  * @author madw
  */
 public class Autoboxing {
@@ -17,12 +16,12 @@ public class Autoboxing {
     public static void main(String[] args) {
         test();
     }
-    
+
     public static void test() {
         Set<Object> list = new HashSet<>();
-        for(short s=0;s<=10;s++){
+        for (short s = 0; s <= 10; s++) {
             list.add(s);
-            list.remove(s-1);
+            list.remove(s - 1);
         }
         System.out.println(list.size());
     }

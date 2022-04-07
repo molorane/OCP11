@@ -13,7 +13,6 @@ import java.util.ListIterator;
 import java.util.Set;
 
 /**
- *
  * @author madw
  */
 public class HashSetDemo {

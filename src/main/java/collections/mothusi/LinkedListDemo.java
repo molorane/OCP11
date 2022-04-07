@@ -8,7 +8,6 @@ package collections.mothusi;
 import java.util.LinkedList;
 
 /**
- *
  * @author madw
  */
 public class LinkedListDemo {
@@ -35,7 +34,7 @@ public class LinkedListDemo {
         // Remove first and last elements.
         ll.removeFirst();
         ll.removeLast();
-        System.out.println("ll after deleting first and last: "+ ll);
+        System.out.println("ll after deleting first and last: " + ll);
         // Get and set a value.
         String val = ll.get(2);
         ll.set(2, val + " Changed");

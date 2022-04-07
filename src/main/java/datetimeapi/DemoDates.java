@@ -1,4 +1,5 @@
 package datetimeapi;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,28 +24,28 @@ import java.util.concurrent.BlockingQueue;
 import java.util.function.Predicate;
 
 
-
 public class DemoDates {
-	
-	private String name;
-	public DemoDates(String n) {
-		name = n;
-	}
-	
-	public static void main(String[] args) throws InterruptedException{
-		int a = 0xAE;
-		System.out.println(a);
-	}
-	
-	@Override
-	protected void finalize() throws Throwable {
-		System.out.println("Java is cool.");
-	}
-	
-	public static void q8() {
-		LocalDate localDate = LocalDate.of(2015, 4, 4);
-		System.out.println(localDate.format(DateTimeFormatter.ofPattern("MMM dd, yyyy")));
-		System.out.println(localDate.format(DateTimeFormatter.ofPattern("E, MMM dd, yyyy")));
-		System.out.println(localDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
-	}
+
+    private String name;
+
+    public DemoDates(String n) {
+        name = n;
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        int a = 0xAE;
+        System.out.println(a);
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Java is cool.");
+    }
+
+    public static void q8() {
+        LocalDate localDate = LocalDate.of(2015, 4, 4);
+        System.out.println(localDate.format(DateTimeFormatter.ofPattern("MMM dd, yyyy")));
+        System.out.println(localDate.format(DateTimeFormatter.ofPattern("E, MMM dd, yyyy")));
+        System.out.println(localDate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
+    }
 }

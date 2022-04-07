@@ -6,7 +6,6 @@
 package BlockLambdaDemo2;
 
 /**
- *
  * @author madw
  */
 public class BlockLambdaDemo2 {

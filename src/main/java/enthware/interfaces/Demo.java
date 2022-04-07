@@ -4,25 +4,25 @@ import java.lang.annotation.*;
 import java.nio.file.Files;
 
 @interface Authors {
-	Author[] value();
+    Author[] value();
 }
 
 @Repeatable(Authors.class)
 @interface Author {
-	int id() default 0;
+    int id() default 0;
 
-	String value();
+    String value();
 }
 
 public class Demo {
-	
-	static final String n = "Love";
 
-	@Author(id=9,value=n)
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    static final String n = "Love";
 
-		var var = 0;
-	}
+    @Author(id = 9, value = n)
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+        var var = 0;
+    }
 
 }

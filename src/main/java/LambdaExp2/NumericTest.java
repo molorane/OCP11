@@ -6,7 +6,6 @@
 package LambdaExp2;
 
 /**
- *
  * @author madw
  */
 public interface NumericTest {

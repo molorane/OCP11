@@ -6,13 +6,17 @@ import java.util.HashSet;
 import java.util.List;
 
 class Base {
-	public <T extends CharSequence> Collection<T> transform(Collection<T> list) {
-		return new ArrayList<T>();
-	}
+    public <T extends CharSequence> Collection<T> transform(Collection<T> list) {
+        return new ArrayList<T>();
+    }
 }
 
 public class Derived extends Base {
 
-	@Override
-	public <T extends CharSequence> List<T> transform(Collection<T> list) { return new ArrayList<T>(); };
+    @Override
+    public <T extends CharSequence> List<T> transform(Collection<T> list) {
+        return new ArrayList<T>();
+    }
+
+    ;
 }

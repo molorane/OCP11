@@ -8,12 +8,12 @@ import java.nio.file.attribute.FileTime;
 
 public class PathBasicFileAttributeView {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		Path path = Paths.get("log.txt");
-		BasicFileAttributeView view = Files.getFileAttributeView(path, BasicFileAttributeView.class);
-		BasicFileAttributes data = view.readAttributes();
-		FileTime lastModifiedTime = FileTime.fromMillis(data.lastModifiedTime().toMillis() + 10_000);
-		view.setTimes(lastModifiedTime, null, null);
-	}
+        Path path = Paths.get("log.txt");
+        BasicFileAttributeView view = Files.getFileAttributeView(path, BasicFileAttributeView.class);
+        BasicFileAttributes data = view.readAttributes();
+        FileTime lastModifiedTime = FileTime.fromMillis(data.lastModifiedTime().toMillis() + 10_000);
+        view.setTimes(lastModifiedTime, null, null);
+    }
 }

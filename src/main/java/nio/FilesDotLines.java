@@ -9,15 +9,15 @@ import java.util.stream.Stream;
 
 public class FilesDotLines {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		Path p = Paths.get("demo2.tx");
-		Stream<String> lines = Files.lines(p);
-		
-		Stream<String> o =  lines.flatMap(line -> Arrays.stream(line.split("")));
-		
-		o.forEach(System.out::println);
-		lines.close();
-	}
+        Path p = Paths.get("demo2.tx");
+        Stream<String> lines = Files.lines(p);
+
+        Stream<String> o = lines.flatMap(line -> Arrays.stream(line.split("")));
+
+        o.forEach(System.out::println);
+        lines.close();
+    }
 
 }

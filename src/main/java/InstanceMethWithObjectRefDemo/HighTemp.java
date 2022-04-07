@@ -6,7 +6,6 @@
 package InstanceMethWithObjectRefDemo;
 
 /**
- *
  * @author madw
  */
 

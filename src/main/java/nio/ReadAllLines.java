@@ -11,14 +11,14 @@ import static java.nio.file.StandardCopyOption.*;
 
 public class ReadAllLines {
 
-	public static void main(String[] args) throws IOException {
-		
-		Path p1 = Paths.get("demo2.tx");
+    public static void main(String[] args) throws IOException {
 
-		List<String> lines = Files.readAllLines(p1);
-		
-		lines.forEach(System.out::println);
-		
-	}
+        Path p1 = Paths.get("demo2.tx");
+
+        List<String> lines = Files.readAllLines(p1);
+
+        lines.forEach(System.out::println);
+
+    }
 
 }

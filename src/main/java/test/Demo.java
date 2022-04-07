@@ -20,57 +20,60 @@ import java.util.TreeSet;
 import java.util.Vector;
 
 class Base<M> {
-	public <T extends Number, Z extends Number> Map<T, Z> getMap(T t, Z z) {
-		return new HashMap<T, Z>();
-	}
+    public <T extends Number, Z extends Number> Map<T, Z> getMap(T t, Z z) {
+        return new HashMap<T, Z>();
+    }
 
-	public <T> void p(List<? extends T> list) {
+    public <T> void p(List<? extends T> list) {
 
-	}
+    }
 }
 
 @SuppressWarnings("rawtypes")
 class Derived extends Base {
-	// //1
+    // //1
 
-	// @Override
-	// public Map<Number, Number> getMap(Number t, Number z) { return new
-	// TreeMap<Number, Number>(); }; //2
+    // @Override
+    // public Map<Number, Number> getMap(Number t, Number z) { return new
+    // TreeMap<Number, Number>(); }; //2
 
-	@Override
-	public Map<Number, Number> getMap(Number t, Number z) {
-		return new HashMap<Number, Number>();
-	}; // 3
+    @Override
+    public Map<Number, Number> getMap(Number t, Number z) {
+        return new HashMap<Number, Number>();
+    }
+
+    ; // 3
 }
 
 public class Demo<T> extends Base {
 
 
-	public <X extends Number> void p() {
+    public <X extends Number> void p() {
 
-	}
+    }
 
-	public void showSize(List<?> list) {
-		System.out.println(list.size());
-	}
+    public void showSize(List<?> list) {
+        System.out.println(list.size());
+    }
 
-	@SuppressWarnings("unchecked")
-	public static void main(String[] args) {
-		@SuppressWarnings("rawtypes")
-		List words = new ArrayList(21);
-		words.add("2323");
-	}
+    @SuppressWarnings("unchecked")
+    public static void main(String[] args) {
+        @SuppressWarnings("rawtypes")
+        List words = new ArrayList(21);
+        words.add("2323");
+    }
 
 }
 
 class StuckTurkeyCage implements AutoCloseable {
-	public void close() throws Exception {
-		throw new Exception("Cage door does not close");
-	}
+    public void close() throws Exception {
+        throw new Exception("Cage door does not close");
+    }
 
-	public static void main(String[] args) throws Exception{
-		try {
-			throw new FileNotFoundException();
-		} catch (IOException | RuntimeException e) { }
-	}
+    public static void main(String[] args) throws Exception {
+        try {
+            throw new FileNotFoundException();
+        } catch (IOException | RuntimeException e) {
+        }
+    }
 }

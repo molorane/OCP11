@@ -6,17 +6,18 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.util.function.Function;
 
-@Retention(RetentionPolicy.RUNTIME) 
-@Target({ElementType.TYPE_USE, ElementType.TYPE_PARAMETER}) 
-@interface NonNull{     }
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.TYPE_USE, ElementType.TYPE_PARAMETER})
+@interface NonNull {
+}
 
 public class Demo {
 
-	public static void main(@NonNull String[] args) {
-		// TODO Auto-generated method stub
-		var str = (@NonNull String) "";
-		
-		@NonNull String str2 = "";
-	}
+    public static void main(@NonNull String[] args) {
+        // TODO Auto-generated method stub
+        var str = (@NonNull String) "";
+
+        @NonNull String str2 = "";
+    }
 
 }

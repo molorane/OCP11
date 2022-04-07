@@ -6,17 +6,16 @@
 package LambdaExceptionDemo;
 
 /**
- *
  * @author madw
  */
 public class EmptyArrayException extends Exception {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	EmptyArrayException() {
+    EmptyArrayException() {
         super("Array Empty");
     }
 }

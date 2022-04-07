@@ -5,28 +5,27 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class BufferedReaderDemo {
-	
-	
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		InputStreamReader reader = new InputStreamReader(System.in);
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        InputStreamReader reader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(reader);
 
-        try{
+        try {
             String line = bufferedReader.readLine();
-            System.out.println("Line "+line);
-        }catch(IOException io){
+            System.out.println("Line " + line);
+        } catch (IOException io) {
             io.printStackTrace();
-        }finally {
+        } finally {
 
             try {
-            	reader.close();
+                reader.close();
                 bufferedReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-	}
+    }
 
 }

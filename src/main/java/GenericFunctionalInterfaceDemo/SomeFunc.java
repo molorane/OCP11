@@ -6,7 +6,6 @@
 package GenericFunctionalInterfaceDemo;
 
 /**
- *
  * @author madw
  */
 public interface SomeFunc<T> {

@@ -6,12 +6,12 @@ import java.util.concurrent.TimeUnit;
 
 public class Demo {
 
-	public static void main(String[] args) throws InterruptedException {
-		ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
-		
-		Runnable r = () -> System.out.println("Task executed");
-		
-		ses.schedule(r, 1, TimeUnit.SECONDS);
-		ses.shutdown();
-	}
+    public static void main(String[] args) throws InterruptedException {
+        ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
+
+        Runnable r = () -> System.out.println("Task executed");
+
+        ses.schedule(r, 1, TimeUnit.SECONDS);
+        ses.shutdown();
+    }
 }
