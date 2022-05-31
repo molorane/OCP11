@@ -41,20 +41,20 @@ public class CollectorsToList {
         ));
 
         List<Traveller> travellers = Arrays.asList(traveller1, traveller2, traveller3);
-        Map<String, OrderAllocation> map =
+        Map<IntervalTravelDetails, OrderAllocation> map =
                 travellers
                         .stream()
                         .collect(
-                                Collectors.toMap(Traveller::getName, traveller ->
+                                Collectors.toMap(Traveller::getTravelDetails, traveller ->
                                         traveller.getAllocations()
                                                 .stream()
-                                                .filter(orderAllocation -> orderAllocation.getCurrency().equals("USD")
-                                                && orderAllocation.getProductType().equals("Notes"))
+                                                .filter(orderAllocation -> orderAllocation.getCurrency().equals(item.currency)
+                                                && orderAllocation.getProductType().equals(item.getProductType()))
                                                 .collect(Collectors.toList())
                                 ))
                         .entrySet()
                         .stream()
-                        .filter(entry -> entry.getValue().size() > 0)
+                        .filter(entry -> entry.getValue().size() == 1)
                         .collect(Collectors.toMap(Map.Entry::getKey, allocation -> allocation.getValue().get(0)));
 
         System.out.println(map);

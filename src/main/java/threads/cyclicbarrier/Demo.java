@@ -21,7 +21,7 @@ public class Demo {
 
     public static class Service implements Runnable {
 
-        private CyclicBarrier barrier;
+        private final CyclicBarrier barrier;
 
         public Service(CyclicBarrier barrier) {
             this.barrier = barrier;
@@ -30,6 +30,7 @@ public class Demo {
         @Override
         public void run() {
             try {
+                //barrier.reset();
                 barrier.await();
             } catch (InterruptedException | BrokenBarrierException e) {
                 e.printStackTrace();
