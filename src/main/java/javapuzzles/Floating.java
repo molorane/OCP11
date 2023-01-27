@@ -10,13 +10,13 @@ package javapuzzles;
  */
 public class Floating {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         float f = 123456789;
 
         while (f > 0) {
             System.out.println(f);
-            f=f-1;
+            f++;
         }
 
     }
