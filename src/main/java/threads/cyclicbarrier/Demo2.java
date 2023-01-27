@@ -46,7 +46,8 @@ public class Demo2 {
 
         service.submit(t1);
         service.submit(t1);
-        //service.submit(t1);
+        service.submit(t1);
+        service.submit(t1);
 
         service.shutdown();
     }

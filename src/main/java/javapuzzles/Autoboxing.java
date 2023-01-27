@@ -18,10 +18,13 @@ public class Autoboxing {
     }
 
     public static void test() {
-        Set<Object> list = new HashSet<>();
-        for (short s = 0; s <= 10; s++) {
+        Set<Short> list = new HashSet<>();
+        for (short s = 1; s <= 10; s++) {
             list.add(s);
-            list.remove(s - 1);
+        }
+
+        for (short s = 0; s <= 10; s++) {
+            list.remove(s - 0);
         }
         System.out.println(list.size());
     }

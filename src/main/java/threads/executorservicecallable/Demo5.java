@@ -20,6 +20,8 @@ public class Demo5 {
         String o = future.get();
         System.out.println(o);
 
+        Runtime.getRuntime().availableProcessors();
+
         service.shutdown();
     }
 

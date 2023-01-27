@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class Demo {
 
-    private static Semaphore semaphore = new Semaphore(4);
+    private static final Semaphore semaphore = new Semaphore(4);
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -18,7 +18,6 @@ public class Demo {
     }
 
     public static void m(String str) {
-
 
         try {
             semaphore.acquire();

@@ -29,7 +29,7 @@ public class JavaPuzzles {
 
         Set<Integer> set = list.stream().sorted().collect(Collectors.toSet());
 
-        set.forEach(action -> System.out.println(action));
+        set.forEach(System.out::println);
 
         //System.out.println(str.toString());
         //System.out.println(reverse);

@@ -17,15 +17,7 @@ public class CyclicBarrierTest {
 
 
         System.out.println("Reserving tennis court \n" + "As soon as four players arrive, game will start");
-        t1();
         t2();
-    }
-
-    public static void t1() {
-        new Player(barrier, "Joe");
-        new Player(barrier, "Dora");
-        new Player(barrier, "Tintin");
-        new Player(barrier, "Barbie");
     }
 
     public static void t2() {
@@ -34,7 +26,7 @@ public class CyclicBarrierTest {
         Player2 p2 = new Player2(barrier, "Tintin");
         Player2 p3 = new Player2(barrier, "Barbie");
 
-        ExecutorService service = Executors.newFixedThreadPool(3);
+        ExecutorService service = Executors.newFixedThreadPool(4);
         service.submit(p);
         service.submit(p1);
         service.submit(p2);
