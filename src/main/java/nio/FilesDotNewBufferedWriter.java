@@ -14,9 +14,7 @@ public class FilesDotNewBufferedWriter {
 
         Path path = Paths.get("gorilla.txt");
         try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_16)) {
-            writer.write(""""
-
-                    """);
+            writer.write("");
         } catch (IOException e) {
             // Handle file I/O exception...
         }
