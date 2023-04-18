@@ -13,6 +13,10 @@ public class ChainedException {
     }
 
     public static void main(String[] args) {
+
+        String str = "Java";
+        String str2 = "Java";
+        System.out.println(str == str2);
         try {
             fooThrower();
             barThrower();

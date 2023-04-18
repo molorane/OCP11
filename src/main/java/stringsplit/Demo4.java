@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Demo1 {
+public class Demo4 {
 
     public static void s1() {
         String start = "Language#Programming!Java)Love_I";
@@ -18,17 +18,10 @@ public class Demo1 {
                 sb.append(" ");
             }
         }
-
-        String arr[] = sb.toString().split(" ");
-
-        for (int i = arr.length - 1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
-        }
-
     }
 
     public static void s2() {
-        String start = "the#man!in) the_moon";
+        String start = "the#man!in) % the_moon$";
 
         StringBuilder sb = new StringBuilder();
 
@@ -69,6 +62,6 @@ public class Demo1 {
     }
 
     public static void main(String[] args) {
-        s3();
+        s2();
     }
 }
