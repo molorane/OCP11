@@ -1,6 +1,7 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class PrimeReader {
     public static void main(String[] real) throws Exception {

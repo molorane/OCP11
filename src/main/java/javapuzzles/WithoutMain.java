@@ -9,7 +9,7 @@ public class WithoutMain {
     }
 
     public static void run() {
-        IntStream.range(1,20)
+        IntStream.range(1, 20)
                 .forEach(System.out::println);
     }
 }

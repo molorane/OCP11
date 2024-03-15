@@ -1,8 +1,8 @@
 package localization.control;
 
-import java.util.ResourceBundle;
 import java.util.List;
 import java.util.Locale;
+import java.util.ResourceBundle;
 
 // Extend ResourceBundle.Control and override getCandidateLocales method
 // to get the list of candidate locales that Java searches for

@@ -1,6 +1,8 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
 
 class StreamTest {
     public static void main(String[] args) {

@@ -1,10 +1,6 @@
 package threads.executorservicecallable;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 //Factorial implements Callable so that it can be passed to an ExecutorService
 //and get executed as a task.

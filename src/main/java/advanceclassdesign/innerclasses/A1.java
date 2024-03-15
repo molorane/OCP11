@@ -1,9 +1,5 @@
 package advanceclassdesign.innerclasses;
 
-import java.util.*;
-
-import timeit.TimeIt;
-
 interface I {
 
     interface L {

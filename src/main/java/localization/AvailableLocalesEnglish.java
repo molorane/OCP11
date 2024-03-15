@@ -1,7 +1,7 @@
 package localization;
 
-import java.util.Locale;
 import java.util.Arrays;
+import java.util.Locale;
 
 public class AvailableLocalesEnglish {
     public static void main(String[] args) {

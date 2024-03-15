@@ -1,6 +1,6 @@
 package test;
 
-import java.io.*;
+import java.io.Closeable;
 import java.sql.SQLException;
 
 public class AutocloseableFlow {

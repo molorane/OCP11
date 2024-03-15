@@ -1,6 +1,8 @@
 package test;
 
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Athlete {
     int stroke = 0;

@@ -1,9 +1,5 @@
 package lambdafunctions.functional;
 
-import java.util.Collections;
-import java.util.Set;
-import java.util.function.Consumer;
-
 @FunctionalInterface
 interface Cust<T> {
     boolean test(T i);

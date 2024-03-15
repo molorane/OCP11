@@ -1,7 +1,5 @@
 package enthware.ooa.a;
 
-import enthware.ooa.b.AccessTester;
-
 public class Test {
 
     public Test() {

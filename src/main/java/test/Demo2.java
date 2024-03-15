@@ -1,20 +1,9 @@
 package test;
 
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
-import java.util.stream.Collectors;
-
-import static java.util.function.Predicate.*;
 
 class C {
 

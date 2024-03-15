@@ -1,6 +1,7 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public class WidgetProcessor {
     public int getWidgetNumber(byte[] data) throws Exception {

@@ -1,6 +1,7 @@
 package threads.forkjoin;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class SearchList<T> {
     private List<T> data;

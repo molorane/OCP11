@@ -1,5 +1,5 @@
 package javacompiler;
 
-public interface Do{
+public interface Do {
     void test();
 }

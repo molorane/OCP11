@@ -1,6 +1,6 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.File;
 
 public class Journey {
     public static void main(String[] dig) {

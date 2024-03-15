@@ -1,6 +1,6 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.File;
 
 public class Resume {
     public void resetWorkingDirectory() throws Exception {

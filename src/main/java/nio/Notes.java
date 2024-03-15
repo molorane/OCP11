@@ -1,7 +1,9 @@
 package nio;
 
-import java.io.*;
-import java.nio.file.*;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Notes {
     public void printNotes() {

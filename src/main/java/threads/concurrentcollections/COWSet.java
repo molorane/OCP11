@@ -1,9 +1,7 @@
 package threads.concurrentcollections;
 
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 

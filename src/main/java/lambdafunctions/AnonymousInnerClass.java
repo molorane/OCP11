@@ -1,7 +1,5 @@
 package lambdafunctions;
 
-import java.util.ListResourceBundle;
-
 class AnonymousInnerClass {
     @FunctionalInterface
     interface LambdaFunction {

@@ -1,8 +1,8 @@
 package test.other;
 
-import java.util.ArrayList;
-
 import test.animal.Frog;
+
+import java.util.ArrayList;
 
 public class Tadpole extends Frog {
 

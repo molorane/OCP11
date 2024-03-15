@@ -2,7 +2,6 @@ package builtin;
 
 import java.time.LocalDateTime;
 import java.util.Random;
-import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;

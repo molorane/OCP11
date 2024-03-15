@@ -1,7 +1,6 @@
 package enthware.interfaces;
 
-import java.lang.annotation.*;
-import java.nio.file.Files;
+import java.lang.annotation.Repeatable;
 
 @interface Authors {
     Author[] value();

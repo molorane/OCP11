@@ -2,7 +2,7 @@ package enthware.flowcontrol;
 
 import java.time.LocalDate;
 
-import static java.time.DayOfWeek.*;
+import static java.time.DayOfWeek.FRIDAY;
 
 public class TestClass {
     public static void main(String[] args) {

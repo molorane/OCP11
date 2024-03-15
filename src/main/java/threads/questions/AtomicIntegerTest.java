@@ -1,6 +1,6 @@
 package threads.questions;
 
-import java.util.concurrent.atomic.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 class AtomicIntegerTest {
     static AtomicInteger ai = new AtomicInteger(10);

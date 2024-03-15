@@ -1,6 +1,8 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.Writer;
 
 public class Furniture {
     public final static void main(String... inventory) throws Exception {

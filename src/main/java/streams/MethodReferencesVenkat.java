@@ -1,11 +1,11 @@
 package streams;
 
+import timeit.TimeIt;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.*;
-
-import timeit.TimeIt;
+import java.util.stream.Stream;
 
 enum Gender {
     FEMALE,

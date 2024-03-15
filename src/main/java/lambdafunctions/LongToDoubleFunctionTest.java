@@ -3,11 +3,6 @@ package lambdafunctions;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.DoubleConsumer;
-import java.util.function.IntUnaryOperator;
-import java.util.function.LongConsumer;
-import java.util.function.LongFunction;
-import java.util.function.LongToDoubleFunction;
 
 public class LongToDoubleFunctionTest {
 

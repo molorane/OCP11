@@ -1,6 +1,6 @@
 package enthware.streams;
 
-import java.util.stream.*;
+import java.util.stream.DoubleStream;
 
 public class DoubleStreamDemo {
 

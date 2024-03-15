@@ -37,8 +37,8 @@ public class NumberRangeSummarizerImpl implements NumberRangeSummarizer {
                     if (list.get(j) + 1 != list.get(j + 1)) {
                         sb.append(String.format("%s-%s, ", firstForRange, list.get(j)));
                         foundRange = false;
-                        System.out.printf("[%s]%s-%s%n",j, list.get(j), list.get(j+1));
-                        i = j+1;
+                        System.out.printf("[%s]%s-%s%n", j, list.get(j), list.get(j + 1));
+                        i = j + 1;
                         break;
                     }
                     j++;

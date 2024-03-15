@@ -1,7 +1,7 @@
 package threads.blockingqueue;
 
-import java.util.concurrent.*;
-import java.util.stream.*;
+import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class Line {
     static BlockingDeque<Integer> queue = new LinkedBlockingDeque<>();

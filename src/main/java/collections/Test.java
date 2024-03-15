@@ -1,7 +1,5 @@
 package collections;
 
-import java.io.*;
-
 class LastError<T> {
     private T lastError;
 

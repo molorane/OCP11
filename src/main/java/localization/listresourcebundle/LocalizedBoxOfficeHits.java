@@ -1,7 +1,7 @@
 package localization.listresourcebundle;
 
-import java.util.ResourceBundle;
 import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class LocalizedBoxOfficeHits {
 

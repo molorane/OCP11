@@ -1,6 +1,5 @@
 package exceptions;
 
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ScanInt5 {

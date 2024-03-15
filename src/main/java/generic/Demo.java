@@ -1,7 +1,6 @@
 package generic;
 
 import java.util.ArrayDeque;
-import java.util.Map;
 
 class Bbb {
 

@@ -1,7 +1,5 @@
 package enthware.oop;
 
-import java.util.function.Consumer;
-
 class A {
     int fi = 10;
 }

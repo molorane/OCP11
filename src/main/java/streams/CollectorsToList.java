@@ -7,10 +7,10 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import java.util.Arrays;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.regex.Pattern;
 import java.util.List;
+import java.util.Map;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class CollectorsToList {
     public static void main(String[] args) {
@@ -49,7 +49,7 @@ public class CollectorsToList {
                                         traveller.getAllocations()
                                                 .stream()
                                                 .filter(orderAllocation -> orderAllocation.getCurrency().equals(item.currency)
-                                                && orderAllocation.getProductType().equals(item.getProductType()))
+                                                        && orderAllocation.getProductType().equals(item.getProductType()))
                                                 .collect(Collectors.toList())
                                 ))
                         .entrySet()

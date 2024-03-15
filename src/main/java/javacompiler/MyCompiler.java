@@ -1,5 +1,6 @@
 package javacompiler;
 
+import javax.tools.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,12 +10,6 @@ import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import javax.tools.Diagnostic;
-import javax.tools.DiagnosticCollector;
-import javax.tools.JavaCompiler;
-import javax.tools.JavaFileObject;
-import javax.tools.StandardJavaFileManager;
-import javax.tools.ToolProvider;
 
 public class MyCompiler {
 
@@ -78,7 +73,7 @@ public class MyCompiler {
                     // Santity check
                     if (obj instanceof Do) {
                         // Cast to the DoStuff interface
-                        Do stuffToDo = (Do)obj;
+                        Do stuffToDo = (Do) obj;
                         // Run it baby
                         stuffToDo.test();
                     }

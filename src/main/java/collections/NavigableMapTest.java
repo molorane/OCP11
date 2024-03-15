@@ -1,6 +1,5 @@
 package collections;
 
-import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 

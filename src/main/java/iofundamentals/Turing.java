@@ -1,6 +1,6 @@
 package iofundamentals;
 
-import java.io.*;
+import java.io.Console;
 
 public class Turing {
     public static void main(String... robots) {
